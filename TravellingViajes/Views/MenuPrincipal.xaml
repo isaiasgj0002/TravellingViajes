@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TravellingViajes.Views.MenuPrincipal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3498db" VerticalOptions="FillAndExpand">
+            <Label Text="Bienvenido a Travelling-Viajes"
+               FontSize="24"
+               TextColor="White"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Margin="0,40,0,20"/>
+            <Frame CornerRadius="10"
+                   BackgroundColor="LightGray"
+                   HeightRequest="200" 
+                   WidthRequest="100">
+                <Image 
+                    Source="https://e.huawei.com/-/mediae/images/industries/aviation/integrated-operating-center/integrated-operating-center-banner-bequoted.png"
+                    Aspect="AspectFill"/>
+            </Frame>
+
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <Button Text="Ver Destinos" 
+                    BackgroundColor="#2ecc71"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Margin="5"
+                    Clicked="VerDestinos_Clicked"/>
+                <Button Text="Mis Reservas" 
+                    BackgroundColor="#e74c3c"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Margin="5"
+                    Clicked="MisReservas_Clicked"/>
+                <Button Text="Nueva Reserva" 
+                    BackgroundColor="#f1c40f"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Margin="5"
+                    Clicked="NuevaReserva_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
